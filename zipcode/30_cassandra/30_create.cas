@@ -1,0 +1,18 @@
+create keyspace ZIPS;
+
+use ZIPS;
+
+create column family c1
+	with key_validation_class = 'UTF8Type'
+	and comparator = 'UTF8Type'
+	and default_validation_class = 'UTF8Type';
+
+create column family c2
+	with key_validation_class = 'UTF8Type'
+	and comparator = 'UTF8Type'
+	and default_validation_class = 'UTF8Type';
+
+create column family rm
+	with key_validation_class = 'UTF8Type'
+	and comparator = 'UTF8Type'
+	and default_validation_class = 'UTF8Type';
